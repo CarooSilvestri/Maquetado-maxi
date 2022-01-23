@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aiko.art</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar" class="bg-white" >
+        <div class="cont-navbar">
+        
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="rsc/logo black.png" width="166px" height="46px">
+            </a>
+           
+
+            <!-- Search form -->
+            <form>
+                <input class="search-navbar search-dark" type="text" placeholder="Search...">
+            </form>
+
+            <!-- Nav options -->
+            <ul class="nav rowed">
+
+                <a ahref="explore.html" class="dark-text">
+                    <li class="menu-option rowed">
+                        <p>Explore</p>
+                        <span class="arrow_down"><img src="rsc/icon_arrow_down.png"></span>
+                    </li>
+                </a>
+
+                <div class="dropdown">
+                    <li class="menu-option rowed dark-text">
+                        <p>Create</p>
+                        <span class="arrow_down"><img src="rsc/icon_arrow_down.png"></span>
+                    </li>
+                    <ul class="dropdown-content">
+                      <a href="create_nft.html"><li class="dropdown-option">NFT</li></a>
+                      <a href="create_collection.html"><li class="dropdown-option">Collection</li></a>
+                    </ul>
+                </div>
+
+                <a ahref="explore.html" class="light-text selected">
+                    <li class="menu-option rowed">
+                        <p>83ed16b3...</p>
+                        <span class="arrow_down"><img src="rsc/icon_arrow_down_white.png"></span>
+                    </li>
+                </a> 
+
+                <div class="dropdown">
+                    <li class="menu-option rowed dark-text">
+                        <p>My profile</p>
+                        <span class="arrow_down"><img src="rsc/icon_arrow_down.png"></span>
+                    </li>
+                    <ul class="dropdown-content">
+                      <a href="edit_profile.html"><li class="dropdown-option">Edit Profile</li></a>
+                      <a href="notifications.html"><li class="dropdown-option">Notifications</li></a>
+                      <a href="collection_verification.html"><li class="dropdown-option">Collection verification</li></a>
+                      <a href="index.html"><li class="dropdown-option">Log out</li></a>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+    </div>  
+
+    <!-- Container -->
+    <div id="container">
+
+        <!-- Page title -->
+        <div class="title-page">
+            <h1>Create Collection</h1>
+        </div>
+
+        <!-- Form -->
+        <div class="centered spaced">
+
+            <div class="cont-column cont-form centered">
+
+                <form>
+                    <div class="wrap rowed">
+                        <label>Title</label>
+                        <input class="form-area" type="text" placeholder="e.g. 'My first collection'">
+                    </div>
+
+                    <div class="wrap rowed">
+                        <label>Short description</label>
+                        <textarea class="form-area" placeholder="e.g. 'Life is beautiful when you mint NFTs'" rows="4"></textarea>
+                    </div>
+
+                    <div class="wrap rowed">
+                        <label>Description</label>
+                        <textarea class="form-area" placeholder="e.g. 'Life is beautiful when you mint NFTs'" rows="4"></textarea>
+                    </div>
+
+                    <div class="wrap rowed wrap-file">
+                        <label for="algo">Upload your header image</label>
+                        <input class="form-file" id="algo" type="file">
+                    </div>
+
+                    <div class="wrap rowed wrap-file">
+                        <label for="algo">Upload your icon image</label>
+                        <input class="form-file" id="algo" type="file">
+                    </div>
+
+                    <div class="wrap rowed wrap-file">
+                        <label for="algo">Upload your vertical promotional banner</label>
+                        <input class="form-file" id="algo" type="file">
+                    </div>
+                   
+                    <div class="wrap rowed wrap-file">
+                        <label for="algo">Upload your horizontal promotional banner</label>
+                        <input class="form-file" id="algo" type="file">
+                    </div>
+                
+                    <div class="wrap rowed">
+                        <label>Tags</label>
+                        <input class="form-area" type="text" placeholder="Link to artwork page, if you have one">
+                    </div>
+
+                    <div class="wrap rowed">
+                        <label>Collection symbols</label>
+                        <input class="form-area" type="text" placeholder="e.g. TheStars">
+                    </div>
+                    
+                    <div class="wrap-checkbox rowed">
+                        <input type="checkbox" id="cbox" class="checkbox"> 
+                        <div class="label-cbox">
+                            <label for="cbox">NSFW<br></label>
+                            <p class="note">This NFT includes explicit and sensitive content.</p>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <h3>Upcoming Collection</h3>
+                        <p class="note">To feature your collection in our Calendar of Upcoming Collections, please provide the following details as
+                            accurately as possible. If you are planning a pre-sale, first fill in the planned supply, the pre-sale mint date and
+                            the initial NFT price for the pre-sale. Once the pre-sale is over, please edit your collection and update the
+                            information with the total supply of minted NFTs, the final mint date and the initial NFT price for the public sale.
+                        </p>
+                    </div>
+
+                    <div class="wrap rowed">
+                        <label>Collection supply </label>
+                        <input class="form-area" type="text" placeholder="e.g. 10000">
+                    </div>
+
+                    <div class="wrap rowed">
+                        <label>Minting date</label>
+                        <input class="form-area" type="date" placeholder="e.g. 10000">
+                    </div>
+
+                    <div class="wrap rowed">
+                        <label>Collection NFT initial price</label>
+                        <input class="form-area" type="number" placeholder="e.g. 10000">
+                    </div>
+
+                    <div class="wrap rowed">
+                        <label>Twitter</label>
+                        <input class="form-area" type="text" placeholder="Official collection Twitter invite link">
+                    </div>
+
+                    <div class="wrap rowed">
+                        <label>Discord</label>
+                        <input class="form-area" type="text" placeholder="Official collection Discord invite link">
+                    </div>
+
+                    <div class="wrap rowed">
+                        <label>Telegram</label>
+                        <input class="form-area" type="text" placeholder="Official collection Telegram invite link">
+                    </div>
+
+                    <div class="wrap rowed">
+                        <label>Instagram</label>
+                        <input class="form-area" type="text" placeholder="Official collection Instagram invite link">
+                    </div>
+
+                    <div class="wrap rowed">
+                        <label>Website</label>
+                        <input class="form-area" type="text" placeholder="Official collection Website invite link">
+                    </div>
+                </form> 
+            </div>
+
+            <button class="btn-submit cont-form centered">Create Collection</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="cont-footer centered">
+            <span>© 2022 Aiko.art</span>
+        </div>        
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aiko.art</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar" class="bg-white" >
+        <div class="cont-navbar">
+        
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="rsc/logo black.png" width="166px" height="46px">
+            </a>
+           
+
+            <!-- Search form -->
+            <form>
+                <input class="search-navbar search-dark" type="text" placeholder="Search...">
+            </form>
+
+            <!-- Nav options -->
+            <ul class="nav rowed">
+
+                <a ahref="explore.html" class="dark-text">
+                    <li class="menu-option rowed">
+                        <p>Explore</p>
+                        <span class="arrow_down"><img src="rsc/icon_arrow_down.png"></span>
+                    </li>
+                </a>
+
+                <div class="dropdown">
+                    <li class="menu-option rowed dark-text">
+                        <p>Create</p>
+                        <span class="arrow_down"><img src="rsc/icon_arrow_down.png"></span>
+                    </li>
+                    <ul class="dropdown-content">
+                      <a href="create_nft.html"><li class="dropdown-option">NFT</li></a>
+                      <a href="create_collection.html"><li class="dropdown-option">Collection</li></a>
+                    </ul>
+                </div>
+
+                <a ahref="explore.html" class="light-text selected">
+                    <li class="menu-option rowed">
+                        <p>83ed16b3...</p>
+                        <span class="arrow_down"><img src="rsc/icon_arrow_down_white.png"></span>
+                    </li>
+                </a> 
+
+                <div class="dropdown">
+                    <li class="menu-option rowed dark-text">
+                        <p>My profile</p>
+                        <span class="arrow_down"><img src="rsc/icon_arrow_down.png"></span>
+                    </li>
+                    <ul class="dropdown-content">
+                      <a href="edit_profile.html"><li class="dropdown-option">Edit Profile</li></a>
+                      <a href="notifications.html"><li class="dropdown-option">Notifications</li></a>
+                      <a href="collection_verification.html"><li class="dropdown-option">Collection verification</li></a>
+                      <a href="index.html"><li class="dropdown-option">Log out</li></a>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+    </div>  
+
+    <!-- Container -->
+    <div id="cont-profile" class="rowed">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+
+            <h6>PROFILE</h6>
+
+            <ul class="nav-sidebar">
+                <a href="#" class="light-text">
+                    <li class="selected selected-sidebar rowed">
+                        <span class="icons-sidebar"><img src="rsc/icon_profile_white.png" width="21px"></span>
+                        <p>Edit Profile</p>
+                    </li>
+                </a>
+                <a href="notifications.html" class="dark-text">
+                    <li class="opt-sidebar rowed">
+                        <span class="icons-sidebar"><img src="rsc/icon_notification.png" width="21px"></span>
+                        <p>Notifications</p>
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+        <!-- Content -->
+       <div class="content">
+            <h1>Edit profile</h1>
+            <div class="cont-info-profile">
+
+                <div class="col-cont-form">
+                    <form>
+                        <div class="wrap">
+                            <label>Nombre</label>
+                            <input class="form-area" type="text" placeholder="Velit tortor ut elit vestibulum sit">
+                        </div>
+                        <div class="wrap">
+                            <label>Username</label>
+                            <input class="form-area" type="text" placeholder="Velit tortor ut elit vestibulum sit">
+                        </div>
+                        <div class="wrap">
+                            <label>Biography</label>
+                            <textarea class="form-area" placeholder="Velit tortor ut elit vestibulum sit" rows="4"></textarea>
+                        </div>
+                        <div class="wrap">
+                            <label>Email</label>
+                            <input class="form-area" type="email" placeholder="Velit tortor ut elit vestibulum sit">
+                        </div>
+                        <div class="wrap">
+                            <label>Location</label>
+                            <input class="form-area" type="text" placeholder="Velit tortor ut elit vestibulum sit">
+                        </div>
+                        <div class="wrap">
+                            <label>Twitter URL</label>
+                            <input class="form-area" type="text" placeholder="Velit tortor ut elit vestibulum sit">
+                        </div>
+                        <div class="wrap">
+                            <label>Website URL</label>
+                            <input class="form-area" type="text" placeholder="Velit tortor ut elit vestibulum sit">
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="col-cont-img">
+                    <h5>Profile image</h5>
+                    <div class="circle">
+                        <img src="rsc/icon_edit.png" width="28px">
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+</body>
+</html>
