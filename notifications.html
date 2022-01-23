@@ -9,95 +9,142 @@
 </head>
 <body>
 
-    <!-- Navbar -->
-    <div id="navbar">
+     <!-- Navbar -->
+     <div id="navbar" class="bg-white" >
         <div class="cont-navbar">
-            <img src="rsc/logo black.png" width="166px" height="46px">
+        
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="rsc/logo black.png" width="166px" height="46px">
+            </a>
+           
+
+            <!-- Search form -->
             <form>
-                <i class="search-icon"></i>
-                <input class="form-area search" type="text" placeholder="Search...">
+                <input class="search-navbar search-dark" type="text" placeholder="Search...">
             </form>
 
-            <ul class="nav">
-                <a class="link-option">
-                    <li class="menu-option">
+            <!-- Nav options -->
+            <ul class="nav rowed">
+
+                <a ahref="explore.html" class="dark-text">
+                    <li class="menu-option rowed">
                         <p>Explore</p>
                         <span class="arrow_down"><img src="rsc/icon_arrow_down.png"></span>
                     </li>
                 </a>
 
-                <a href="create.html" class="link-option">
-                    <li class="menu-option">
+                <div class="dropdown">
+                    <li class="menu-option rowed dark-text">
                         <p>Create</p>
                         <span class="arrow_down"><img src="rsc/icon_arrow_down.png"></span>
                     </li>
-                </a>
-                <a class="link-option selected">
-                    <li class="menu-option">
-                        <p>83ed16b3...</p>
-                        <span class="arrow_down"><img src="rsc/icon_arrow_down.png"></span>
-                    </li>
-                </a>
+                    <ul class="dropdown-content">
+                      <a href="create_nft.html"><li class="dropdown-option">NFT</li></a>
+                      <a href="create_collection.html"><li class="dropdown-option">Collection</li></a>
+                    </ul>
+                </div>
 
-                <a class="link-option">
-                    <li class="menu-option">
+                <a ahref="explore.html" class="light-text selected">
+                    <li class="menu-option rowed">
+                        <p>83ed16b3...</p>
+                        <span class="arrow_down"><img src="rsc/icon_arrow_down_white.png"></span>
+                    </li>
+                </a> 
+
+                <div class="dropdown">
+                    <li class="menu-option rowed dark-text">
                         <p>My profile</p>
                         <span class="arrow_down"><img src="rsc/icon_arrow_down.png"></span>
                     </li>
+                    <ul class="dropdown-content">
+                      <a href="edit_profile.html"><li class="dropdown-option">Edit Profile</li></a>
+                      <a href="notifications.html"><li class="dropdown-option">Notifications</li></a>
+                      <a href="collection_verification.html"><li class="dropdown-option">Collection verification</li></a>
+                      <a href="index.html"><li class="dropdown-option">Log out</li></a>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+    </div>  
+
+    <!-- Container -->
+    <div id="container" class="rowed">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+
+            <h6>PROFILE</h6>
+
+            <ul class="nav-sidebar">
+                <a href="#" class="dark-text">
+                    <li class="opt-sidebar rowed">
+                        <span class="icons-sidebar"><img src="rsc/icon_profile.png" width="21px"></span>
+                        <p>Edit Profile</p>
+                    </li>
+                </a>
+                <a href="notifications.html" class="light-text">
+                    <li class="rowed selected selected-sidebar">
+                        <span class="icons-sidebar"><img src="rsc/icon_notification_white.png" width="21px"></span>
+                        <p>Notifications</p>
+                    </li>
                 </a>
             </ul>
         </div>
-    </div>
 
-    <div id="cont-profile">
+        <!-- Content -->
+        <div class="prof-content centered">
+            <h2>Notifications</h2>
 
-        <div class="sidebar">
-            <h5>Profile</h5>
-            <ul>
-                <a href="edit_profile.html"><li class="opt-sidebar">Edit profile</li></a>
-                <a href="#"><li class="opt-sidebar selected">Notifications</li></a>
-            </ul>
-        </div>
+            <div class="cont-column cont-prof cont-not">
 
-       <div class="content">
-            <h1>Notifications</h1>
-            <div class="cont-info-notifications">
-
-                <div class="col-cont-form">
-
-                    <div class="wrap-checkbox">
-                        <input type="checkbox" id="cbox" value="" class="checkbox"> 
+                <div class="wrap-checkbox rowed space-checkbox">
+                    <input type="checkbox" id="cbox" class="checkbox"> 
+                    <div class="label-cbox text-md">
                         <label for="cbox">Item sold</label>
-                        <p class="descripiton">Get notified when you sold an NFT.</p>
-                    </div>
-
-                    <div class="wrap-checkbox">
-                        <input type="checkbox" id="cbox" value="" class="checkbox"> 
-                        <label for="cbox">Offer Accepted</label>
-                        <p class="descripiton">Get notified when your offer is accepted by the NFT owner.</p>
-                    </div>
-
-                    <div class="wrap-checkbox">
-                        <input type="checkbox" id="cbox" value="" class="checkbox"> 
-                        <label for="cbox">New Offers</label>
-                        <p class="descripiton">Get notified when someones make an offer for your NFTs.</p>
-                    </div>
-
-                    <div class="wrap-checkbox">
-                        <input type="checkbox" id="cbox" value="" class="checkbox"> 
-                        <label for="cbox">Collection Available</label>
-                        <p class="descripiton">Get notified when a collection which you have an NFT form becomes available on Aiko.art.</p>
-                    </div>
-
-                    <div class="wrap-checkbox">
-                        <input type="checkbox" id="cbox" value="" class="checkbox"> 
-                        <label for="cbox">Featured Collections</label>
-                        <p class="descripiton">Get occasional updates about featured collections.   </p>
+                        <p class="note">Get notified when you sold an NFT.</p>
                     </div>
                 </div>
+
+                <div class="wrap-checkbox rowed space-checkbox">
+                    <input type="checkbox" id="cbox" class="checkbox"> 
+                    <div class="label-cbox text-md">
+                        <label for="cbox">Offer Accepted</label>
+                        <p class="note">Get notified when your offer is accepted by the NFT owner.</p>
+                    </div>
+                </div>
+
+                <div class="wrap-checkbox rowed space-checkbox">
+                    <input type="checkbox" id="cbox" class="checkbox"> 
+                    <div class="label-cbox text-md">
+                        <label for="cbox">New Offers</label>
+                        <p class="note">Get notified when someones make an offer for your NFTs.</p>
+                    </div>
+                </div>
+
+                <div class="wrap-checkbox rowed space-checkbox">
+                    <input type="checkbox" id="cbox" class="checkbox"> 
+                    <div class="label-cbox text-md">
+                        <label for="cbox">Collection Available</label>
+                        <p class="note">Get notified when a collection which you have an NFT form becomes available on Aiko.art.</p>
+                    </div>
+                </div>
+
+                <div class="wrap-checkbox rowed space-checkbox">
+                    <input type="checkbox" id="cbox" class="checkbox"> 
+                    <div class="label-cbox text-md">
+                        <label for="cbox">Featured Collections</label>
+                        <p class="note">Get occasional updates about featured collections.</p>
+                    </div>
+                </div>
+
+                <div class="wrap rowed">
+                    <label class="text-md">Minimum Offer Threshold</label>
+                    <p class="note">Receive notifications only when you receive offers with a value greater than or equal to this amount of SOL</p>
+                    <input class="form-area" type="text" placeholder="0 SOL">
+                </div>
             </div>
-            
-       </div>
+        </div>
     </div>
 </body>
 </html>
