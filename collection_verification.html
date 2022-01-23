@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aiko.art</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar" class="bg-white" >
+        <div class="cont-navbar">
+        
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="rsc/logo black.png" width="166px" height="46px">
+            </a>
+           
+
+            <!-- Search form -->
+            <form>
+                <input class="search-navbar search-dark" type="text" placeholder="Search...">
+            </form>
+
+            <!-- Nav options -->
+            <ul class="nav rowed">
+
+                <a ahref="explore.html" class="dark-text">
+                    <li class="menu-option rowed">
+                        <p>Explore</p>
+                        <span class="arrow_down"><img src="rsc/icon_arrow_down.png"></span>
+                    </li>
+                </a>
+
+                <div class="dropdown">
+                    <li class="menu-option rowed dark-text">
+                        <p>Create</p>
+                        <span class="arrow_down"><img src="rsc/icon_arrow_down.png"></span>
+                    </li>
+                    <ul class="dropdown-content">
+                      <a href="create_nft.html"><li class="dropdown-option">NFT</li></a>
+                      <a href="create_collection.html"><li class="dropdown-option">Collection</li></a>
+                    </ul>
+                </div>
+
+                <a ahref="explore.html" class="light-text selected">
+                    <li class="menu-option rowed">
+                        <p>83ed16b3...</p>
+                        <span class="arrow_down"><img src="rsc/icon_arrow_down_white.png"></span>
+                    </li>
+                </a> 
+
+                <div class="dropdown">
+                    <li class="menu-option rowed dark-text">
+                        <p>My profile</p>
+                        <span class="arrow_down"><img src="rsc/icon_arrow_down.png"></span>
+                    </li>
+                    <ul class="dropdown-content">
+                      <a href="edit_profile.html"><li class="dropdown-option">Edit Profile</li></a>
+                      <a href="notifications.html"><li class="dropdown-option">Notifications</li></a>
+                      <a href="collection_verification.html"><li class="dropdown-option">Collection verification</li></a>
+                      <a href="index.html"><li class="dropdown-option">Log out</li></a>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+    </div>  
+
+    <!-- Container -->
+    <div id="container">
+
+        <!-- Page title -->
+        <div class="title-page">
+            <h1>Collection Verification</h1>
+        </div>
+
+        <!-- Form -->
+        <div class="container-form centered spaced">
+
+            <div class="wrap rowed cont-form">
+                <label>Collection</label>
+                <select name="select" class="form-area" >
+                    <option value="value1" placeholder="Link to artwork page, if you have one">Value 1</option>
+                    <option value="value2" selected>Value 2</option>
+                    <option value="value3">Value 3</option>
+                  </select>
+            </div> 
+
+            <div class="cont-column cont-form">
+                    
+                    <p class="text-lg"><strong>Personal contact</strong></p>
+                    <p class="note">In order to verify your collection, we may need to get in touch with you.
+                        In at least one of the fields below, please enter your personal username so that we may be able to contact you.</p>
+                        
+                    <form class="form">
+
+                        <div class="wrap rowed wrap-file">
+                            <label for="algo">Upload static preview</label>
+                            <input class="form-file" id="algo" type="file">
+                        </div>
+
+                        <div class="wrap rowed wrap-file">
+                            <label for="algo">Upload animated preview</label>
+                            <input class="form-file" id="algo" type="file">
+                        </div>
+
+                        <div class="wrap rowed wrap-file">
+                            <label> Upload artwork file</label>
+                            <input class="form-file" id="algo" type="file">
+                            <label for>Supported file formats: .jpeg, .png, .gif, .mp4, and .mov</label></input>
+                        </div>
+                    
+                        <div class="wrap rowed">
+                            <label>Title</label>
+                            <input class="form-area" type="text" placeholder="e.g. ‘Night’">
+                        </div>
+
+                        <div class="wrap rowed">
+                            <label>Short description</label>
+                            <textarea class="form-area" placeholder="e.g. 'It was a beautiful night'" rows="4"></textarea>
+                        </div>
+
+                        <div class="wrap rowed">
+                            <label>Description</label>
+                            <textarea class="form-area" placeholder="e.g. 'It was a beautiful night'" rows="4"></textarea>
+                        </div>
+
+                        <div class="wrap rowed">
+                            <label>Royalties from secondary sales</label>
+                            <input class="form-area" type="text" placeholder="Royalties on secondary sales (%), number from 0 till 50">
+                        </div>
+
+                        <div class="wrap rowed">
+                            <label>External URL</label>
+                            <input class="form-area" type="text" placeholder="Link to artwork page, if you have one">
+                        </div>
+
+                        <div class="wrap rowed">
+                            <label>Tags</label>
+                            <input class="form-area" type="text" placeholder="Link to artwork page, if you have one">
+                        </div>
+
+                        <div class="wrap rowed">
+                            <label>License</label>
+                            <input class="form-area" type="text" placeholder="Link to artwork page, if you have one">
+                        </div>
+
+                        <div class="wrap rowed">
+                            <label>Collection</label>
+                            <div class="double-form rowed">
+                                <input class="form-area" type="text" placeholder="Link to artwork page, if you have one">
+                                <input class="form-area" type="text" placeholder="Link to artwork page, if you have one">
+                            </div>                        
+                        </div>
+                        
+                        <div class="wrap-checkbox rowed">
+                            <input type="checkbox" id="cbox" class="checkbox"> 
+                            <div class="label-cbox">
+                                <label for="cbox">NSFW<br></label>
+                                <p class="note">This NFT includes explicit and sensitive content.</p>
+                            </div>
+                        </div>
+                    </form>
+
+                    <p class="note">You CANNOT edit your NFT after minting - make sure that all information is correct.</p>
+                </div>
+
+                <button class="btn-submit cont-form centered">Mint NFT</button>
+            </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="cont-footer centered">
+            <span>© 2022 Aiko.art</span>
+        </div>        
+    </footer>
+
+</body>
+</html>

@@ -119,6 +119,7 @@ textarea { resize: none; }
 
 .text-sm { font-size: var(--main-font-size-sm); }
 .text-md { font-size: var(--main-font-size-md); }
+.text-lg { font-size: var(--main-font-size-lg); }
 
 .selected {
 
@@ -514,6 +515,7 @@ textarea { resize: none; }
 /* -------------------------------------------------------------------------------- */
 /* ------------- CREATE NFT ---------------------------------------- */
 /* ------------- CREATE COLLECTION -------------------------------- */
+/* ------------- VERIFY COLLECTION -------------------------------- */
 /* -------------------------------------------------------------------------------- */
 
 .title-page {
@@ -524,10 +526,15 @@ textarea { resize: none; }
     padding: 3rem;
 }
 
+.container-form {
+
+    width: 45%;
+}
+
 .cont-form {
 
-    width: 55%;
     margin-bottom: 3rem;
+    margin: 0 auto;
 }
 
 .form {
