@@ -81,7 +81,7 @@
 
             <div class="wrap rowed cont-form">
                 <label>Collection</label>
-                <select name="select" class="form-area">
+                <select name="select" class="form-area form-selector text-sm">
                     <option value="value1">Value 1</option>
                     <option value="value2" selected>Value 2</option>
                     <option value="value3">Value 3</option>
@@ -89,7 +89,7 @@
             </div> 
 
             <div class="cont-column cont-form">
-                    
+                
                 <p class="text-lg"><strong>Personal contact</strong></p>
                 <p class="note">In order to verify your collection, we may need to get in touch with you.
                     In at least one of the fields below, please enter your personal username so that we may be able to contact you.</p>
@@ -116,16 +116,19 @@
                         <input class="form-area" type="text" placeholder="@instagram_username">
                     </div>
                     
-                    <p class="text-lg"><strong>External minting</strong></p>
-                    <p class="note">If you have minted the NFTs from your collection externally (i.e. not on Aiko.Art), paste the Candy
-                        machine ID(s) and/or mint hashes below. Alternatively, if you have minted your entire collectio on Aiko.Art, 
-                        there is no need to fill the fields below, you can skip this step. In the event that you minted one part of
-                        your collection on Aiko.Art and another part externally, paste, the Candy machine ID(s) and/or mint hashes
-                        of the externally minted NFTs only.</p>
+                    <div class="info">
+                        <p class="text-lg"><strong>External minting</strong></p>
+                        <p class="note">If you have minted the NFTs from your collection externally (i.e. not on Aiko.Art), paste the Candy
+                            machine ID(s) and/or mint hashes below. Alternatively, if you have minted your entire collectio on Aiko.Art, 
+                            there is no need to fill the fields below, you can skip this step. In the event that you minted one part of
+                            your collection on Aiko.Art and another part externally, paste, the Candy machine ID(s) and/or mint hashes
+                            of the externally minted NFTs only.</p>
+                    </div>
 
                     <div class="wrap rowed">
                         <label>Candy machine ID(s)</label>
                         <input class="form-area" type="text" placeholder="Velit tortor ut elit vestibulum sit">
+                        <br>
                         <input class="form-area" type="text" placeholder="Velit tortor ut elit vestibulum sit">
                     </div>
 
@@ -134,13 +137,15 @@
                         <textarea class="form-area" placeholder="" rows="4"></textarea>
                     </div>
 
-                    <p class="text-lg"><strong>Proof of authorship</strong></p>
-                    <p class="note">To verify your collection, we requiere definite proof that you are the author of its artworks. This
-                        includes files that clearly show that you made the artwork within this collection.
-                        Please collect all files that are relevant into one folder, put it on a cloud storage service (preferably Google
-                        Drive) and paste the access link below. Make sure the link is open and has no expiration date.</p>
+                    <div class="info">
+                        <p class="text-lg"><strong>Proof of authorship</strong></p>
+                        <p class="note">To verify your collection, we requiere definite proof that you are the author of its artworks. This
+                            includes files that clearly show that you made the artwork within this collection.
+                            Please collect all files that are relevant into one folder, put it on a cloud storage service (preferably Google
+                            Drive) and paste the access link below. Make sure the link is open and has no expiration date.</p>
+                    </div>
 
-                    <div class="wrap rowed">
+                    <div class="no-margin wrap rowed">
                         <label>Link of proof</label>
                         <input class="form-area" type="text" placeholder="Link of proof">
                     </div>

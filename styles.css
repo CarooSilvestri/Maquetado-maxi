@@ -152,7 +152,7 @@ textarea { resize: none; }
 
 .note {
 
-    font-size: var(--main-font-size-sm);
+    font-size: var(--main-font-size-md);
     color: var(--main-grey-600);
 }
 
@@ -540,7 +540,6 @@ textarea { resize: none; }
 .form {
 
     margin-top: 4em;
-    margin-bottom: 4em;
 }
 
 .form-file {
@@ -559,7 +558,7 @@ textarea { resize: none; }
 .wrap {
 
     flex-direction: column;
-    margin-bottom: 4em;
+    margin-bottom: 3em;
 }
 
 .wrap label, .wrap-editable label, .wrap-checkbox {
@@ -579,6 +578,14 @@ textarea { resize: none; }
 
 .form-area::placeholder { font-size: var(--main-font-size-sm); }
 
+.form-selector {
+
+    appearance: none;
+    background: url(rsc/icon_arrow_down.png) no-repeat right; 
+    background-color: var(--main-grey-50);
+    background-position-x: 810px;
+}
+
 .checkbox {
 
     width: 24px;
@@ -589,7 +596,11 @@ textarea { resize: none; }
 .label-cbox { margin-left: 1em; }
 .wrap-checkbox .label-cbox label { margin-top: 2em; }
 
-.info { margin: 4em 0 4em 0; }
+.info {
+    
+    margin: 4em 0 4em 0;
+    line-height: 28px;
+}
 
 .info h3 {
 
@@ -597,7 +608,6 @@ textarea { resize: none; }
     margin-bottom: 1.5em;
 }
 
-/* BOTON MUGROSO*/
 .btn-submit {
 
     border: none;
@@ -676,3 +686,8 @@ footer {
 
     font-size: 18px;
 }
+
+
+/* Others */
+
+.no-margin { margin: 0; }
