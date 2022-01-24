@@ -79,7 +79,7 @@
         <!-- Form -->
         <div class="container-form centered spaced">
 
-            <div class="cont-column cont-form centered">
+            <div class="cont-column cont-form">
 
                 <form>
                     <div class="wrap rowed">
@@ -97,25 +97,53 @@
                         <textarea class="form-area" placeholder="e.g. 'Life is beautiful when you mint NFTs'" rows="4"></textarea>
                     </div>
 
-                    <div class="wrap rowed wrap-file">
-                        <label for="algo">Upload your header image</label>
-                        <input class="form-file" id="algo" type="file">
+                    <div class="wrap rowed">
+                        <label>Upload your header image</label>
+                        <div class="wrap-file rowed">
+                            <p class="description">
+                                Upload your header image
+                                <input class="form-file" type="file">
+                            </p>
+                            <p class="description">The Ideal format is 2:1: (e.g 1920x960px)</p>
+                            <p class="description">The neccesary file format is .jpeg or .png.</p>
+                        </div>
                     </div>
 
-                    <div class="wrap rowed wrap-file">
-                        <label for="algo">Upload your icon image</label>
-                        <input class="form-file" id="algo" type="file">
+                    <div class="wrap rowed">
+                        <label>Upload your icon image</label>
+                        <div class="wrap-file rowed">
+                            <p class="description">
+                                Upload your icon image
+                                <input class="form-file" type="file">
+                            </p>
+                            <p class="description">The ideal format is square - 1:1 (e.g. 512x512px)</p>
+                            <p class="description">The neccesary file format is .jpeg or .png.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="wrap rowed">
+                        <label>Upload your vertical promotional banner</label>
+                        <div class="wrap-file rowed">
+                            <p class="description">
+                                Upload your vertical promotional banner
+                                <input class="form-file" type="file">
+                            </p>
+                            <p class="description">The file format must be 300x476 (W x H)</p>
+                            <p class="description">The neccesary file format is .jpeg or .png.</p>
+                        </div>
                     </div>
 
-                    <div class="wrap rowed wrap-file">
-                        <label for="algo">Upload your vertical promotional banner</label>
-                        <input class="form-file" id="algo" type="file">
-                    </div>
-                   
-                    <div class="wrap rowed wrap-file">
-                        <label for="algo">Upload your horizontal promotional banner</label>
-                        <input class="form-file" id="algo" type="file">
-                    </div>
+                    <div class="wrap rowed">
+                        <label>Upload your horizontal promotional banner</label>
+                        <div class="wrap-file rowed">
+                            <p class="description">
+                                Upload your horizontal promotional banner
+                                <input class="form-file" type="file">
+                            </p>
+                            <p class="description">The file format must be 476x300 (W x H)</p>
+                            <p class="description">The neccesary file format is .jpeg or .png.</p>
+                        </div>
+                    </div>                  
                 
                     <div class="wrap rowed">
                         <label>Tags</label>
@@ -123,7 +151,7 @@
                     </div>
 
                     <div class="wrap rowed">
-                        <label>Collection symbols</label>
+                        <label>Collection symbol</label>
                         <input class="form-area" type="text" placeholder="e.g. TheStars">
                     </div>
                     
@@ -179,14 +207,14 @@
                         <input class="form-area" type="text" placeholder="Official collection Instagram invite link">
                     </div>
 
-                    <div class="wrap rowed">
+                    <div class="wrap rowed no-margin">
                         <label>Website</label>
                         <input class="form-area" type="text" placeholder="Official collection Website invite link">
                     </div>
                 </form> 
             </div>
 
-            <button class="btn-submit">Create Collection</button>
+            <button class="btn-submit text-md">Create Collection</button>
         </div>
     </div>
 

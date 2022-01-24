@@ -79,29 +79,49 @@
         <!-- Form -->
         <div class="container-form centered spaced">
 
-            <div class="cont-column cont-form centered">
+            <div class="cont-column cont-form">
                 
-                <p class="note">Note: Make sure that all information is correct and double-check all spelling before you mint
+                <p class="description">Note: Make sure that all information is correct and double-check all spelling before you mint
                     your NFT because once the process is complete you CANNOT edit your NFT.</p>
                     
                 <form class="form">
 
-                    <div class="wrap rowed wrap-file">
-                        <label for="algo">Upload static preview</label>
-                        <input class="form-file" id="algo" type="file">
+                    <div class="wrap rowed">
+                        <label>Upload static preview</label>
+                        <div class="wrap-file rowed">
+                            <p class="description">
+                                Upload preview
+                                <input class="form-file" type="file">
+                            </p>
+                            <p class="description">Supported file formats: .jpeg, .png, .gif</p>
+                            <p class="description">Max file size is 10 MB.</p>
+                        </div>
                     </div>
 
-                    <div class="wrap rowed wrap-file">
-                        <label for="algo">Upload animated preview</label>
-                        <input class="form-file" id="algo" type="file">
+                    <div class="wrap rowed">
+                        <label>Upload animated preview</label>
+                        <div class="wrap-file rowed">
+                            <p class="description">
+                                Upload preview
+                                <input class="form-file" type="file">
+                            </p>
+                            <p class="description">Supported file formats: .jpeg, .png, .gif</p>
+                            <p class="description">Max file size is 10 MB.</p>
+                        </div>
                     </div>
 
-                    <div class="wrap rowed wrap-file">
-                        <label> Upload artwork file</label>
-                        <input class="form-file" id="algo" type="file">
-                        <label for>Supported file formats: .jpeg, .png, .gif, .mp4, and .mov</label></input>
+                    <div class="wrap rowed">
+                        <label>Upload artwork file</label>
+                        <div class="wrap-file rowed">
+                            <p class="description">
+                                Upload preview
+                                <input class="form-file" type="file">
+                            </p>
+                            <p class="description">Supported file formats: .jpeg, .png, .gif</p>
+                            <p class="description">Max file size is 10 MB.</p>
+                        </div>
                     </div>
-                
+
                     <div class="wrap rowed">
                         <label>Title</label>
                         <input class="form-area" type="text" placeholder="e.g. ‘Night’">
@@ -138,6 +158,11 @@
                     </div>
 
                     <div class="wrap rowed">
+                        <label>License</label>
+                        <input class="form-area" type="text" placeholder="Link to artwork page, if you have one">
+                    </div>
+
+                    <div class="wrap rowed">
                         <label>Collection</label>
                         <div class="double-form rowed">
                             <input class="form-area" type="text" placeholder="Link to artwork page, if you have one">
@@ -148,16 +173,16 @@
                     <div class="wrap-checkbox rowed">
                         <input type="checkbox" id="cbox" class="checkbox"> 
                         <div class="label-cbox">
-                            <label for="cbox">NSFW<br></label>
+                            <label for="cbox">NSFW</label>
                             <p class="note">This NFT includes explicit and sensitive content.</p>
                         </div>
                     </div>
                 </form>
-
+                <br>
                 <p class="note">You CANNOT edit your NFT after minting - make sure that all information is correct.</p>
             </div>
 
-            <button class="btn-submit cont-form centered">Mint NFT</button>
+            <button class="btn-submit text-md">Mint NFT</button>
         </div>
     </div>
 
