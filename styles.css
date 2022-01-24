@@ -605,11 +605,15 @@ textarea { resize: none; }
     padding: 0.5em 1em 0.5em 1em;
 }
 
-.checkbox {
-
+[type="checkbox"]  {
     width: 24px;
     height: 24px;
-    background-color: var(--main-grey-300);
+}
+
+input[type="checkbox"] {
+    
+    background: var(--main-grey-800);
+    border: none;
 }
 
 .label-cbox { margin-left: 1em; }
