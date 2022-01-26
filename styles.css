@@ -701,6 +701,13 @@ hr {
 
 .search-nfts {  justify-content: center; }
 
+
+.nfts{
+
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
 .nft-card {
 
     background-color: var(--main-grey-10);
