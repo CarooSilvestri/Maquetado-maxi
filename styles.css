@@ -90,6 +90,11 @@ hr {
     opacity: 0.5;
 }
 
+input[type="checkbox"] {
+
+    width: 24px;
+    height: 24px;
+}
 /* For all the containers */
 
 #container {
@@ -749,8 +754,6 @@ hr {
 
 .history-nft { width: 40%;}
 .nft-card .btn-submit { margin-top: 1em; }
-
-
 
 .info-view {
 
