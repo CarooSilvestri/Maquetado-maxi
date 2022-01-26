@@ -167,20 +167,8 @@ hr {
     margin: 0 3em 3em 0;
 }
 
-.card img {
-    
-    border-radius: 12px;
-}
+.card img { border-radius: 12px; }
 
-.info-card {
-
-    margin-top: 1em;
-}
-
-.info-card p {
-
-    font-size: 18px;
-}
 
 /* -------------------------------------------------------------------------------- */
 /* ------------- NAVBAR ---------------------------------------- */
@@ -294,9 +282,6 @@ hr {
 
 /* --------------- Cover home --------------- */
 
-
-/* centrar mejor las cosas */
-
 #cover-home {
 
     background-image: url(rsc/Hero-Background.png);
@@ -315,6 +300,7 @@ hr {
 
     color: var(--main-fontcolor-light);
     margin: auto;
+    margin-right: 5em;
 }
 
 .cover-title h1 {
