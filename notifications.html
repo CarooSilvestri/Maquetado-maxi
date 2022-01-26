@@ -9,8 +9,8 @@
 </head>
 <body>
 
-     <!-- Navbar -->
-     <div id="navbar" class="bg-white" >
+    <!-- Navbar -->
+    <div id="navbar" class="bg-white" >
         <div class="cont-navbar">
         
             <!-- Logo -->
@@ -27,12 +27,16 @@
             <!-- Nav options -->
             <ul class="nav rowed">
 
-                <a ahref="explore.html" class="dark-text">
-                    <li class="menu-option rowed">
+                <div class="dropdown">
+                    <li class="menu-option rowed dark-text">
                         <p>Explore</p>
                         <span class="arrow_down"><img src="rsc/icon_arrow_down.png"></span>
-                    </li>
-                </a>
+                    </li>   
+                    <ul class="dropdown-content">
+                      <a href="explore_nft.html"><li class="dropdown-option">NFTs</li></a>
+                      <a href="explore_collections.html"><li class="dropdown-option">Collections</li></a>
+                    </ul>
+                </div>
 
                 <div class="dropdown">
                     <li class="menu-option rowed dark-text">
@@ -45,7 +49,7 @@
                     </ul>
                 </div>
 
-                <a ahref="explore.html" class="light-text selected">
+                <a href="wallet_nfts.html" class="light-text selected">
                     <li class="menu-option rowed">
                         <p>83ed16b3...</p>
                         <span class="arrow_down"><img src="rsc/icon_arrow_down_white.png"></span>
@@ -66,7 +70,7 @@
                 </div>
             </ul>
         </div>
-    </div>  
+    </div>
 
     <!-- Container -->
     <div id="container" class="rowed">
