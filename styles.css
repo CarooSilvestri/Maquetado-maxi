@@ -79,13 +79,16 @@ p {
 }
 
 ul { list-style: none; }
-
 a {color: black;}
 a, a:active, a:hover { text-decoration: none; }
-
 textarea { resize: none; }
 
-
+hr {
+    
+    border-color: var(--main-primary-300);
+    border-width: thin;
+    opacity: 0.5;
+}
 
 /* For all the containers */
 
@@ -139,7 +142,7 @@ textarea { resize: none; }
 
     background-color: #ffffff;
     border: 1px solid var(--main-border-color-cont);
-    padding: 3%;
+    padding: 2em;
     border-radius: 12px;
 }
 
@@ -514,7 +517,7 @@ textarea { resize: none; }
 /* -------------------------------------------------------------------------------- */
 /* ------------- CREATE NFT ---------------------------------------- */
 /* ------------- CREATE COLLECTION -------------------------------- */
-/* ------------- VERIFY COLLECTION -------------------------------- */
+/* ------------- VERIFY COLLECTION ------------------------------- */
 /* -------------------------------------------------------------------------------- */
 
 .title-page {
@@ -605,17 +608,6 @@ textarea { resize: none; }
     padding: 0.5em 1em 0.5em 1em;
 }
 
-[type="checkbox"]  {
-    width: 24px;
-    height: 24px;
-}
-
-input[type="checkbox"] {
-    
-    background: var(--main-grey-800);
-    border: none;
-}
-
 .label-cbox { margin-left: 1em; }
 .wrap-checkbox .label-cbox label { margin-top: 2em; }
 
@@ -642,23 +634,30 @@ input[type="checkbox"] {
     border-radius: 8px;
 }
 
-/* -------------------- Product -------------------- */
 
-.cont-product {
+/* -------------------------------------------------------------------------------- */
+/* ------------- PRODUCT ---------------------------------------- */
+/* -------------------------------------------------------------------------------- */
 
-    display: flex;
-    width: 75%;
+.cont-prod {
+
+    justify-content: space-between;
 }
 
-.col-info, .col-img {
+.col-prod-info {
 
-    width: 50%;
-    margin: 2%;
+    width: 48%;
 }
 
 .cont-img img {
 
     border-radius: 12px;
+}
+
+.circle-picture {
+
+    border-radius: 50%;
+    margin-right: 1em;
 }
 
 .descripiton-prod {
@@ -668,31 +667,38 @@ input[type="checkbox"] {
     padding: 2rem;
 }
 
-.descripiton-prod .descripiton {
+.descripiton-prod .descripiton { margin-top: 1em;}
 
-    margin-top: 1em;
-}
+.info-spaced {  margin: 1.5em auto; }
 
-.info-spaced {
+.fix-aligns-end { justify-content: end; }
+.fix-vertical-align {align-items: center; }
 
-    margin: 1.5em auto;
-}
+.cont-like-view {
 
-/*.rowed img {
-
+    background-color: var(--main-grey-100);
     border-radius: 50px;
-}*/
-
-#history {
-
-    margin-top: 2rem;
+    padding: 0.25em 1em 0.25em 1em;
+    width: fit-content;
+    align-items: center;
+    font-size: 14px;
+    margin-left: 0.5em;
 }
 
-.buyer {
+.mg-left { margin-left: .5em; }
 
-    margin: 4% auto;
+.price { color:var(--main-primary-500); }
+.coin { color: var(--main-grey-600); }
 
+#history { margin-top: 2rem; }
+
+.buyer { 
+    
+    margin: 2em auto; 
+    margin-bottom: 0; 
 }
+
+.buyer .text-md { margin-bottom: 1em; }
 
 /* -------------------------------------------------------------------------------- */
 /* ------------- FOOTER -------------------------------- */

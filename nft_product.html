@@ -10,51 +10,70 @@
 <body>
 
     <!-- Navbar -->
-    <div id="navbar">
+    <div id="navbar" class="bg-white" >
         <div class="cont-navbar">
-            <img src="rsc/logo black.png" width="166px" height="46px">
+        
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="rsc/logo black.png" width="166px" height="46px">
+            </a>
+           
+
+            <!-- Search form -->
             <form>
-                <i class="search-icon"></i>
-                <input class="form-area search" type="text" placeholder="Search...">
+                <input class="search-navbar search-dark" type="text" placeholder="Search...">
             </form>
 
-            <ul class="nav">
-                <a class="link-option">
-                    <li class="menu-option">
+            <!-- Nav options -->
+            <ul class="nav rowed">
+
+                <a ahref="explore.html" class="dark-text">
+                    <li class="menu-option rowed">
                         <p>Explore</p>
                         <span class="arrow_down"><img src="rsc/icon_arrow_down.png"></span>
                     </li>
                 </a>
 
-                <a href="create.html" class="link-option">
-                    <li class="menu-option">
+                <div class="dropdown">
+                    <li class="menu-option rowed dark-text">
                         <p>Create</p>
                         <span class="arrow_down"><img src="rsc/icon_arrow_down.png"></span>
                     </li>
-                </a>
-                <a class="link-option selected">
-                    <li class="menu-option">
-                        <p>83ed16b3...</p>
-                        <span class="arrow_down"><img src="rsc/icon_arrow_down.png"></span>
-                    </li>
-                </a>
+                    <ul class="dropdown-content">
+                      <a href="create_nft.html"><li class="dropdown-option">NFT</li></a>
+                      <a href="create_collection.html"><li class="dropdown-option">Collection</li></a>
+                    </ul>
+                </div>
 
-                <a class="link-option">
-                    <li class="menu-option">
+                <a ahref="explore.html" class="light-text selected">
+                    <li class="menu-option rowed">
+                        <p>83ed16b3...</p>
+                        <span class="arrow_down"><img src="rsc/icon_arrow_down_white.png"></span>
+                    </li>
+                </a> 
+
+                <div class="dropdown">
+                    <li class="menu-option rowed dark-text">
                         <p>My profile</p>
                         <span class="arrow_down"><img src="rsc/icon_arrow_down.png"></span>
                     </li>
-                </a>
+                    <ul class="dropdown-content">
+                      <a href="edit_profile.html"><li class="dropdown-option">Edit Profile</li></a>
+                      <a href="notifications.html"><li class="dropdown-option">Notifications</li></a>
+                      <a href="collection_verification.html"><li class="dropdown-option">Collection verification</li></a>
+                      <a href="index.html"><li class="dropdown-option">Log out</li></a>
+                    </ul>
+                </div>
             </ul>
         </div>
-    </div>  
+    </div>
 
     <!-- Content product -->
     <div id="container">
-        <div class="cont-product centered spaced">
+        <div class="rowed cont-prod centered spaced">
         
             <!-- Image + Description column-->
-            <div class="col-img">
+            <div class="col-prod-info columned">
                 <div class="cont-img">
                     <img src="rsc/test.jpg" width="100%">
                 </div>
@@ -74,55 +93,73 @@
             </div>
 
             <!-- Information + History column-->
-            <div class="col-info">
+            <div class="col-prod-info columned">
+                
                 <div class="cont-column">
+
+                    <!-- Likes and views -->
+                    <div class="rowed fix-aligns-end">
+                        <span class="rowed cont-like-view">92<img src="rsc/icon_heart.png" width="15px" height="13px" class="mg-left"></span>
+                        <span class="rowed cont-like-view">5236<img src="rsc/icon_view.png" width="18px" height="12px" class="mg-left"></span>
+                    </div>
+
+                    <div>
+                        <h4>Creator</h4>
+                        <div class="rowed info-spaced fix-vertical-align">
+                            <img src="rsc/test.jpg" width="38px" height="38px" class="circle-picture">
+                            <p>KfPGT1SpCb1abm...</p>
+                        </div>
+                    </div>
+
                     <div class="info-spaced">
-                       <h2>NameAikoNFT #4213</h2> 
-                       <h1>30</h1>
+                       <h2>NameAikoNFT #4213<img src="rsc/icon_verified.png" width="36px"></h2> 
+                       <div class="rowed fix-vertical-align">
+                            <h1 class="price">30</h1>
+                            <h3 class="mg-left coin">SOL</h3>    
+                        </div>
                     </div>
                     <hr>
 
                     <div class="collection info-spaced">
                         <h6>Collection</h6>
-                        <div class="rowed">
-                            <img src="rsc/test.jpg" width="20%">
+                        <div class="rowed info-spaced">
+                            <img src="rsc/test.jpg" width="56px" class="circle-picture">
                             <div class="">
-                                <h5>Pulvinar vitae nunc nibh aliquet</h5>
-                                <p>Ut sodales in lacus, justo, pellentesque sapien duis</p>
+                                <p class="description">
+                                    <strong>Pulvinar vitae nunc nibh aliquet</strong>
+                                    <img src="rsc/icon_verified.png" width="24px">
+                                </p>
+                                <p class="note">Ut sodales in lacus, justo, pellentesque sapien duis</p>
                             </div>
                         </div>
                     </div>
                     <hr>
                     
                     <div class="info-spaced">
-                        <p><strong>License:</strong> None attached</p> 
+                        <p class="info-spaced"><strong>License:</strong> None attached</p>  
+                    <hr> 
                     </div>
-                     <hr>
 
-                    <div class="info-spaced">
-                        <h5>Creator</h5>
-                        <p>KfPGT1SpCb1abm...</p>
-                    </div>
-                    <button class="btn-submit">Buy NFT</button>
-                </div>
+                    <button class="btn-submit text-md no-margin">Buy NFT</button>
+                </div> 
 
                 <div id="history" class="cont-column">
-                    <h4>History</h4>
+                    <h3>History</h3>
 
                     <div class="buyer">
-                        <h5>1.20 SOL</h5>
+                        <p class="text-md"><strong>1.20 SOL</strong></p>
                         <p class="descripiton">Buyer 5mhUmiZS6qPRCxZCbGs7EVYi9DfKH8BzKM1d9jWEsUDQ
                             At 2022-01-08T14:50:04.173Z</p>
                     </div>
 
                     <div class="buyer">
-                        <h5>2.40 SOL</h5>
+                        <p class="text-md"><strong>2.40 SOL</strong></p>
                         <p class="descripiton">Buyer 5mhUmiZS6qPRCxZCbGs7EVYi9DfKH8BzKM1d9jWEsUDQ
                             At 2022-01-08T14:50:04.173Z</p>
                     </div>
 
                     <div class="buyer">
-                        <h5>3.89 SOL</h5>
+                        <p class="text-md"><strong>3.89 SOL</strong></p>
                         <p class="descripiton">Buyer 5mhUmiZS6qPRCxZCbGs7EVYi9DfKH8BzKM1d9jWEsUDQ
                             At 2022-01-08T14:50:04.173Z</p>
                     </div>
