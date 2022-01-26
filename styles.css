@@ -672,7 +672,7 @@ hr {
 .info-spaced {  margin: 1.5em auto; }
 
 .fix-aligns-end { justify-content: end; }
-.fix-vertical-align {align-items: center; }
+.fix-vertical-align { align-items: center; }
 
 .cont-like-view {
 
@@ -693,12 +693,35 @@ hr {
 #history { margin-top: 2rem; }
 
 .buyer { 
-    
+
     margin: 2em auto; 
     margin-bottom: 0; 
 }
 
 .buyer .text-md { margin-bottom: 1em; }
+
+
+/* -------------------------------------------------------------------------------- */
+/* ------------- EXPLORE NFTS ---------------------------------------- */
+/* ------------- EXPLORE COLLECTIONS ---------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+.nft-card {
+
+    background-color: var(--main-grey-10);
+    padding: 2em;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.info-view{
+
+    justify-content: space-between;
+    margin: .5em auto;
+}
+
+.mg-top {margin-top: 1em;}
+
 
 /* -------------------------------------------------------------------------------- */
 /* ------------- FOOTER -------------------------------- */

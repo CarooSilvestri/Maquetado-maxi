@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aiko.art</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar" class="bg-white" >
+        <div class="cont-navbar">
+        
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="rsc/logo black.png" width="166px" height="46px">
+            </a>
+           
+
+            <!-- Search form -->
+            <form>
+                <input class="search-navbar search-dark" type="text" placeholder="Search...">
+            </form>
+
+            <!-- Nav options -->
+            <ul class="nav rowed">
+
+                <a ahref="explore.html" class="dark-text">
+                    <li class="menu-option rowed">
+                        <p>Explore</p>
+                        <span class="arrow_down"><img src="rsc/icon_arrow_down.png"></span>
+                    </li>
+                </a>
+
+                <div class="dropdown">
+                    <li class="menu-option rowed dark-text">
+                        <p>Create</p>
+                        <span class="arrow_down"><img src="rsc/icon_arrow_down.png"></span>
+                    </li>
+                    <ul class="dropdown-content">
+                      <a href="create_nft.html"><li class="dropdown-option">NFT</li></a>
+                      <a href="create_collection.html"><li class="dropdown-option">Collection</li></a>
+                    </ul>
+                </div>
+
+                <a ahref="explore.html" class="light-text selected">
+                    <li class="menu-option rowed">
+                        <p>83ed16b3...</p>
+                        <span class="arrow_down"><img src="rsc/icon_arrow_down_white.png"></span>
+                    </li>
+                </a> 
+
+                <div class="dropdown">
+                    <li class="menu-option rowed dark-text">
+                        <p>My profile</p>
+                        <span class="arrow_down"><img src="rsc/icon_arrow_down.png"></span>
+                    </li>
+                    <ul class="dropdown-content">
+                      <a href="edit_profile.html"><li class="dropdown-option">Edit Profile</li></a>
+                      <a href="notifications.html"><li class="dropdown-option">Notifications</li></a>
+                      <a href="collection_verification.html"><li class="dropdown-option">Collection verification</li></a>
+                      <a href="index.html"><li class="dropdown-option">Log out</li></a>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+    </div>  
+
+    <!-- Container -->
+    <div id="container">
+
+        <!-- Page title -->
+        <div class="title-page">
+            <h1>Explore NFTs</h1>
+        </div>
+
+        <!-- Content -->
+        <div class="centered">
+
+            <!-- Search form -->
+            <form class="spaced centered">
+                <input class="search-navbar search-dark" type="text" placeholder="Search...">
+            </form>
+
+            <div class="rowed">
+                <div class=" rowed toggles">
+                    <div class="rowed">
+                        <div class="toggle">
+
+                        </div>
+                        <div>Verified</p>
+                    </div>
+                </div>
+
+                <div class="rowed selectors">
+                    <div class="wrap rowed">
+                        <div class="form-area form-selector">
+                            <span>
+                                Sort by...
+                                <img src="rsc/icon_cross_white.png" width="10px" class="cross">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="wrap rowed">
+                        <div class="form-area form-selector">
+                            <span>
+                                Select tags
+                                <img src="rsc/icon_cross_white.png" width="10px" class="cross">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="wrap rowed">
+                        <div class="form-area form-selector">
+                            <span>
+                                Select License
+                                <img src="rsc/icon_cross_white.png" width="10px" class="cross">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rowed nfts spaced">
+
+            <div class="nft-collection-card">
+                <img>
+                <img>
+                <div class="rowed fix-vertical-align">
+                    <p class="text-md">Aiko Collection</b></p>
+                    <img src="rsc/icon_verified.png" width="17px" class="mg-left">
+                </div>
+
+                <span class="verified">Verified collection</span>
+                
+                <div class="mg-top">
+                    <div class="rowed info-view">
+                        <div class="rowed fix-vertical-align">
+                            <p class="note mg-left"><b>Listed:</b> 307</p>
+                        </div>
+                        <span class="rowed fix-vertical-align">
+                            <p class="note">32</p>
+                            <img src="rsc/icon_heart.png" width="15px" height="13px" class="mg-left">
+                        </span>
+                    </div>
+
+                    <div class="rowed info-view no-margin">
+                        <div class="rowed fix-vertical-align">
+                            <p class="note mg-left"><b>Floor:</b> 1.03SOL</p>
+                        </div>
+                            <div class="rowed fix-vertical-align">
+                                <p class="note">322</p>
+                                <img src="rsc/icon_view.png" width="18px" height="12px" class="mg-left">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="cont-footer centered">
+            <span>© 2022 Aiko.art</span>
+        </div>        
+    </footer>
+
+</body>
+</html>
