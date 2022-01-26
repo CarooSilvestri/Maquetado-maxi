@@ -27,12 +27,16 @@
             <!-- Nav options -->
             <ul class="nav rowed">
 
-                <a ahref="explore.html" class="dark-text">
-                    <li class="menu-option rowed">
+                <div class="dropdown">
+                    <li class="menu-option rowed dark-text">
                         <p>Explore</p>
                         <span class="arrow_down"><img src="rsc/icon_arrow_down.png"></span>
-                    </li>
-                </a>
+                    </li>   
+                    <ul class="dropdown-content">
+                      <a href="explore_nft.html"><li class="dropdown-option">NFTs</li></a>
+                      <a href="explore_collections.html"><li class="dropdown-option">Collections</li></a>
+                    </ul>
+                </div>
 
                 <div class="dropdown">
                     <li class="menu-option rowed dark-text">
@@ -80,27 +84,37 @@
         <div class="centered">
 
             <!-- Search form -->
-            <form class="spaced centered">
+            <form class="rowed search-nfts spaced">
                 <input class="search-navbar search-dark" type="text" placeholder="Search...">
             </form>
 
-            <div class="rowed">
-                <div class=" rowed toggles">
+            <div class="rowed fix-vertical-align">
+                <div class="rowed toggles columned">
                     <div class="rowed">
-                        <div class="toggle"></div>
-                        <p>Aiko.Art</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        <p class="mg-left">Aiko.Art</p>
                     </div>
                     <div class="rowed">
-                        <div class="toggle"></div>
-                        <p>Incl. NSFW</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        <p class="mg-left">Incl. NSFW</p>
                     </div>
                     <div class="rowed">
-                        <div>Verified</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        <p class="mg-left">Verified</p>
                     </div>
                 </div>
 
-                <div class="rowed selectors">
-                    <div class="wrap rowed">
+                <div class="rowed selectors columned fix-aligns-end">
+                    <div class="wrap wrap-selector rowed mg-left">
                         <div class="form-area form-selector">
                             <span>
                                 Sort by...
@@ -108,7 +122,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="wrap rowed">
+                    <div class="wrap wrap-selector rowed mg-left">
                         <div class="form-area form-selector">
                             <span>
                                 Select tags
@@ -116,7 +130,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="wrap rowed">
+                    <div class="wrap wrap-selector rowed mg-left">
                         <div class="form-area form-selector">
                             <span>
                                 Select License
@@ -126,7 +140,6 @@
                     </div>
                 </div>
             </div>
-        </div>
 
             <div class="rowed nfts spaced">
 
@@ -139,9 +152,8 @@
 
                     <div class="rowed fix-vertical-align mg-top">
                         <img src="rsc/icon_verified.png" width="20px">
-                        <p class="note">Aiko Collection</b></p>
+                        <p class="note mg-left">Aiko Collection</b></p>
                     </div>
-
 
                     <img src="rsc/test.jpg" width="80%" class="mg-top">
                     <h3>28.00 SOL</h3>

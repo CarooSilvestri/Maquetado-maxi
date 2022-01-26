@@ -15,29 +15,31 @@
         
             <!-- Logo -->
             <a href="index.html">
-                <img src="rsc/logo white.png" width="166px" height="46px">
+                <img src="rsc/logo white.png" width="166px" height="46px" id="logo">
             </a>
            
-
             <!-- Search form -->
             <form>
-                <input class="search-navbar search-light no-bg" type="text" placeholder="Search...">
+                <input class="search-navbar search-light no-bg" id="search-bar" type="text" placeholder="Search...">
             </form>
 
             <!-- Nav options -->
             <ul class="nav rowed">
-
-                <a ahref="explore.html" class="light-text">
-                    <li class="menu-option rowed">
+                <div class="dropdown">
+                    <li class="menu-option rowed light-text">
                         <p>Explore</p>
-                        <span class="arrow_down"><img src="rsc/icon_arrow_down_white.png"></span>
+                        <span class="arrow_down"><img src="rsc/icon_arrow_down_white.png" class="icon_dw_w"></span>
                     </li>
-                </a>
+                    <ul class="dropdown-content">
+                      <a href="explore_nft.html"><li class="dropdown-option">NFTs</li></a>
+                      <a href="explore_collections.html"><li class="dropdown-option">Collections</li></a>
+                    </ul>
+                </div>
 
                 <div class="dropdown">
                     <li class="menu-option rowed light-text">
                         <p>Create</p>
-                        <span class="arrow_down"><img src="rsc/icon_arrow_down_white.png"></span>
+                        <span class="arrow_down"><img src="rsc/icon_arrow_down_white.png" class="icon_dw_w"></span>
                     </li>
                     <ul class="dropdown-content">
                       <a href="create_nft.html"><li class="dropdown-option">NFT</li></a>
@@ -48,20 +50,70 @@
 
                 <a href="#" class="light-text">
                     <li class="menu-option rowed">
-                        <span class="wallet"><img src="rsc/icon_wallet_white.png"></span>
+                        <span class="wallet"><img src="rsc/icon_wallet_white.png" id="icon_w_w"></span>
                         <p>Connect Wallet</p>                        
                     </li>
                 </a>
-
             </ul>
         </div>
     </div>  
 
     <!-- Script for navbar -->
-    <script>
+    <!-- <script>
+        var navbar = document.getElementById("navbar");
+        var logo = document.getElementById("logo");
+        var items_menu_1 = document.getElementsByClassName("menu-option")[0];
+        var items_menu_2 = document.getElementsByClassName("menu-option")[1];
+        var items_menu_3 = document.getElementsByClassName("menu-option")[2];
+        var arrow_1 = document.getElementsByClassName("icon_dw_w")[0];
+        var arrow_2 = document.getElementsByClassName("icon_dw_w")[1];
+        var wallet = document.getElementById("icon_w_w");
+        var search = document.getElementById("search-bar");
 
+
+        window.onscroll = function() {
+
+            if (document.body.scrollTop >= 280 || document.documentElement.scrollTop >= 280) {
+                navbar.classList.add("bg-white");
+                navbar.classList.remove("no-bg");
+
+                search.classList.add("search-dark");
+                search.classList.remove("search-light");
+                
+                items_menu_1.classList.remove("light-text");
+                items_menu_1.classList.add("dark-text");
+                items_menu_2.classList.remove("light-text");
+                items_menu_2.classList.add("dark-text");
+                items_menu_3.classList.remove("light-text");
+                items_menu_3.classList.add("dark-text");
+                
+                logo.src = "rsc/logo black.png";
+                arrow_1.src = "rsc/icon_arrow_down.png";
+                arrow_2.src = "rsc/icon_arrow_down.png";
+                wallet.src = "rsc/icon_wallet_black.png";
+                
+            } else {
+                navbar.classList.add("bg-white");
+                navbar.classList.remove("no-bg");
+
+                search.classList.remove("search-dark");
+                search.classList.add("search-light");
+                
+                items_menu_1.classList.remove("light-text");
+                items_menu_1.classList.add("dark-text");
+                items_menu_2.classList.remove("light-text");
+                items_menu_2.classList.add("dark-text");
+                items_menu_3.classList.remove("light-text");
+                items_menu_3.classList.add("dark-text");
+                
+                logo.src = "rsc/logo black.png";
+                arrow_1.src = "rsc/icon_arrow_down.png";
+                arrow_2.src = "rsc/icon_arrow_down.png";
+                wallet.src = "rsc/icon_wallet_black.png";
+            }
+        };
       
-    </script>
+    </script> -->
 
     <!-- Cover home -->
     <div id="cover-home">
