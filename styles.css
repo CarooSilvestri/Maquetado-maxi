@@ -753,12 +753,18 @@ hr {
 
 .nft-card {
 
+    width: 80%;
     background-color: var(--main-grey-10);
     padding: 1.5em;
     border-radius: 12px;
     align-items: center;
     margin: 1em;
 }
+
+.history-nft { width: 40%;}
+.nft-card .btn-submit { margin-top: 1em; }
+
+
 
 .info-view {
 
@@ -917,4 +923,3 @@ footer {
 
     font-size: 18px;
 }
-
